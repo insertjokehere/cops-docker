@@ -1,6 +1,6 @@
 ## cops-docker
 
-Run (COPS)[https://github.com/seblucas/cops] inside docker
+Run [COPS](https://github.com/seblucas/cops) inside docker
 
 #### Quickstart
 
