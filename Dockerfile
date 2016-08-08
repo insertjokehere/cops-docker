@@ -4,7 +4,7 @@ ENV COPS_VERSION 1.0.0
 
 RUN apt-get update && apt-get install -y \
      wget unzip nginx php5-fpm supervisor php5-gd php5-sqlite \
-     php5-intl
+     php5-intl rsync
 
 RUN mkdir -p /var/www/cops & \
     cd /usr/local/src && \
@@ -15,6 +15,8 @@ RUN mkdir -p /var/www/cops & \
 COPY config_local.php /var/www/cops
 
 RUN chown -R www-data:www-data /var/www
+
+RUN mkdir /tmp/metadata && chown www-data:www-data /tmp/metadata
 
 COPY cops.conf /etc/nginx/sites-enabled/default
 
