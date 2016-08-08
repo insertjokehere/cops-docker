@@ -7,7 +7,7 @@
      * containing all the formats.
      * BEWARE : it has to end with a /
      */
-    $config['calibre_directory'] = '/tmp/metadata/';
+    $config['calibre_directory'] = '/media/';
     
     /*
      * Catalog's title
