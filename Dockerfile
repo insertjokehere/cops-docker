@@ -18,6 +18,8 @@ RUN chown -R www-data:www-data /var/www
 
 RUN mkdir /tmp/metadata && chown www-data:www-data /tmp/metadata
 
+RUN echo "catch_workers_output = yes\n" >> /etc/php5/fpm/pool.d/www.conf
+
 COPY cops.conf /etc/nginx/sites-enabled/default
 
 EXPOSE 80
