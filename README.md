@@ -1,3 +1,8 @@
+# Don't use this repo!
+Its old, running an ancient version of PHP and an unsupported base image
+
+Consider using [linuxserver/cops](https://hub.docker.com/r/linuxserver/cops/) instead
+
 ## cops-docker
 
 Run [COPS](https://github.com/seblucas/cops) inside docker
